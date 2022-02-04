@@ -1,0 +1,13 @@
+{
+  "name": "Sci-Hub Direct",
+  "description": "Dircet to pdf page in Sci-Hub.",
+  "version": "1.0",
+  "manifest_version": 3,
+	"content_scripts": [
+		{
+			"matches": ["https://sci-hub.hkvisa.net/*"],
+			"run_at": "document_start",
+			"js": ["content_script.js"]
+		}
+	]
+}
